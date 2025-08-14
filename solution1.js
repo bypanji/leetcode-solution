@@ -23,6 +23,5 @@ function countHillValley(nums) {
             result++
     }
 
-
     return result
 };
