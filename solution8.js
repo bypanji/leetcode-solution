@@ -14,5 +14,3 @@ var kidsWithCandies = function(candies, extraCandies) {
 
     return result
 };
-
-console.log(kidsWithCandies(candies, extraCandies))
