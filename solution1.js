@@ -26,5 +26,3 @@ function countHillValley(nums) {
 
     return result
 };
-
-console.log("hmmm", countHillValley(nums))
