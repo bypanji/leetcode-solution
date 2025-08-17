@@ -11,5 +11,3 @@ var isPalindrome = function(x) {
 
     return false
 };
-
-console.log(isPalindrome(x))
