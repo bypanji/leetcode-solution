@@ -9,6 +9,8 @@
  * @param {ListNode[]} lists
  * @return {ListNode}
  */
+const lists = [[1,4,5],[1,3,4],[2,6]]
+
 var mergeKLists = function(lists) {
     if (lists.length === 0) return null;
 
@@ -39,9 +41,3 @@ var mergeKLists = function(lists) {
     return mergedList;
     
 };
-
-console.log("Merged List:", mergeKLists([
-    new ListNode(1, new ListNode(4, new ListNode(5))),
-    new ListNode(1, new ListNode(3, new ListNode(4))),
-    new ListNode(2, new ListNode(6))
-]));
