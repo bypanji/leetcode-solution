@@ -33,11 +33,17 @@ var mergeKLists = function(lists) {
         return dummy.next;
     };
 
-    let mergedList = lists[0];
-    for (let i = 1; i < lists.length; i++) {
-        mergedList = mergeTwoLists(mergedList, lists[i]);
+    while (lists.length > 1) {
+        const mergedLists = [];
+        for (let i = 0; i < lists.length; i += 2) {
+            if (i + 1 < lists.length) {
+                mergedLists.push(mergeTwoLists(lists[i], lists[i + 1]));
+            } else {
+                mergedLists.push(lists[i]);
+            }
+        }
+        lists = mergedLists;
     }
 
-    return mergedList;
-    
+    return lists[0];
 };
